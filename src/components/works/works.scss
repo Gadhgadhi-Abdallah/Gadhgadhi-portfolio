@@ -1,0 +1,178 @@
+@import "../../global.scss";
+
+.works {
+  background: radial-gradient(#333, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    top: 30px;
+    color: white;
+    font-size: 3rem;
+    @include tablet {
+      top: 10px;
+    }
+
+    @include mobile {
+      top: 5px;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+
+    &.left {
+      left: 100px;
+      transform: rotate(180deg);
+      @include tablet {
+        left: 50px;
+        bottom: 10px;
+      }
+
+      @include mobile {
+        left: 50px;
+        bottom: 100px;
+      }
+    }
+
+    &.right {
+      right: 100px;
+      @include tablet {
+        right: 50px;
+        bottom: 10px;
+      }
+
+      @include mobile {
+        right: 50px;
+        bottom: 100px;
+      }
+    }
+  }
+
+  .slider {
+    display: flex;
+    height: 350px;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-in-out;
+
+    @include mobile {
+      height: 60vh;
+      top: 10vh;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 700px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+          flex-direction: column-reverse;
+          width: 316px;
+          height: 60vh;
+        }
+
+        .left {
+          flex: 4;
+          height: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include mobile {
+            flex: 0.5;
+          }
+
+          .leftContainer {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+
+            @include mobile {
+              width: 300px;
+            }
+
+            img {
+              height: 50px;
+              margin-bottom: 20px;
+            }
+            h2 {
+              font-size: 1rem;
+              text-align: center;
+              margin-bottom: 20px;
+
+              @include mobile {
+                margin-bottom: 10px;
+              }
+            }
+            p {
+              text-align: center;
+              font-size: 0.9rem;
+              margin-bottom: 20px;
+
+              @include mobile {
+                margin-bottom: 10px;
+              }
+            }
+            h6 {
+              text-align: center;
+              margin-bottom: 20px;
+
+              @include mobile {
+                margin-bottom: 10px;
+              }
+            }
+            .buttonContainer {
+              .openButton {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          @include mobile {
+            flex: 0.5;
+          }
+
+          img {
+            width: 70vw;
+            height: 100%;
+
+            @include mobile {
+              width: 316px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

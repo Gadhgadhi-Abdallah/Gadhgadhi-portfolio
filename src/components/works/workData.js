@@ -1,0 +1,32 @@
+export const data = [
+  {
+    id: "1",
+    icon: "./assets/motivation-icon.png",
+    title: "MERN stack Motivation App V1",
+    desc: "Motivation is what gets you started. Habit is what keeps you going.. ",
+    tags: "#React #Node #Express #Mongodb #Redux-toolkit",
+    img: "./assets/motivation-app.png",
+    appLink: "https://motivation-io.netlify.app/",
+    githubLink: "https://github.com/Gadhgadhi-Abdallah/motivation-app.git",
+  },
+  {
+    id: "2",
+    icon: "./assets/portfolio-icon.png",
+    title: "Portfolio",
+    desc: "My personal web portfolio",
+    tags: "#React #JavaScript #HTML #SCSS ",
+    img: "./assets/portfolio.png",
+    appLink: null,
+    githubLink: "",
+  },
+  {
+    id: "3",
+    icon: "./assets/note.png",
+    title: "Keeper App",
+    desc: "This application is inspired by google keep app.",
+    tags: "#React #JavaScript #HTML #CSS",
+    img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+    appLink: "",
+    githubLink: "",
+  },
+];
