@@ -17,7 +17,7 @@ export const data = [
     tags: "#React #JavaScript #HTML #SCSS ",
     img: "./assets/portfolio.png",
     appLink: null,
-    githubLink: "",
+    githubLink: null,
   },
   {
     id: "3",
@@ -26,7 +26,7 @@ export const data = [
     desc: "This application is inspired by google keep app.",
     tags: "#React #JavaScript #HTML #CSS",
     img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    appLink: "",
-    githubLink: "",
+    appLink: null,
+    githubLink: null,
   },
 ];
