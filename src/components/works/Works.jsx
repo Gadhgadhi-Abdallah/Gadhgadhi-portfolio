@@ -27,11 +27,13 @@ export default function Works() {
                     <p>{d.desc}</p>
                     <h6>{d.tags}</h6>
                     <div className="buttonContainer">
-                      <Link href={d.appLink} target="_blank">
-                        <Button className="openButton" variant="outlined" color="secondary" size="small">
-                          OPEN
-                        </Button>
-                      </Link>
+                      {d.id !== "2" ? (
+                        <Link href={d.appLink} target="_blank">
+                          <Button className="openButton" variant="outlined" color="secondary" size="small">
+                            OPEN
+                          </Button>
+                        </Link>
+                      ) : null}
                       <Link href={d.githubLink} target="_blank">
                         <Button variant="outlined" color="secondary" size="small">
                           CODE
