@@ -17,16 +17,28 @@ export const data = [
     tags: "#React #JavaScript #HTML #SCSS ",
     img: "./assets/portfolio.png",
     appLink: null,
+<<<<<<< HEAD
     githubLink: "https://github.com/Gadhgadhi-Abdallah/Gadhgadhi-portfolio.git",
+=======
+    githubLink: null,
+>>>>>>> origin/main
   },
   {
     id: "3",
     icon: "./assets/note.png",
     title: "Keeper App",
+<<<<<<< HEAD
     desc: "A To Do List application that will help you stay organised ",
     tags: "#React #Node #Express #Mongodb #Redux-toolkit",
     img: "./assets/keeper.png",
     appLink: "https://keeper-to.netlify.app/",
     githubLink: "https://github.com/Gadhgadhi-Abdallah/Keeper-app.git",
+=======
+    desc: "This application is inspired by google keep app.",
+    tags: "#React #JavaScript #HTML #CSS",
+    img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+    appLink: null,
+    githubLink: null,
+>>>>>>> origin/main
   },
 ];
